@@ -12,9 +12,10 @@ GameObject:
   - component: {fileID: 6281762444438644640}
   - component: {fileID: -8388294813458885085}
   - component: {fileID: -9174326227824041504}
+  - component: {fileID: 4674839890018906882}
   m_Layer: 0
   m_Name: suika
-  m_TagString: Untagged
+  m_TagString: suika
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -152,3 +153,28 @@ CircleCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
   m_Radius: 0.5
+--- !u!114 &4674839890018906882
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4480835025516809577}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4cebf665e8cec3b4b906319011a43a6d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  suikaDataList:
+  - {fileID: 11400000, guid: fc7f170e3f799144aab1e7eae69f24ac, type: 2}
+  - {fileID: 11400000, guid: 5fc849c1bc1e96f4cb55f88826576ee7, type: 2}
+  - {fileID: 11400000, guid: 41fe2a76795450a4c90ca9f50d0f527b, type: 2}
+  - {fileID: 11400000, guid: a1d511bf4d29cae44849085f4e3ded9b, type: 2}
+  - {fileID: 11400000, guid: 44eadafd57bc7574eaf574b243a64180, type: 2}
+  - {fileID: 11400000, guid: a78cd52ef7e4e9a438f7e86590e46ed0, type: 2}
+  - {fileID: 11400000, guid: 8abc5befc747eb64297acc205bad1ac9, type: 2}
+  - {fileID: 11400000, guid: 9c77eeaccb0db2040b198d566d1af57b, type: 2}
+  - {fileID: 11400000, guid: 0348f475b31904e448d7315019afb3dc, type: 2}
+  - {fileID: 11400000, guid: db59ded94bfb118409c66643c35d55f3, type: 2}
+  - {fileID: 11400000, guid: 2232d64cfb883484e9fdc660dbf4fdc9, type: 2}
+  level: 0

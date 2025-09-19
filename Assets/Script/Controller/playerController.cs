@@ -5,9 +5,6 @@ using UnityEngine.UIElements;
 public class playerController : MonoBehaviour
 {
     [SerializeField] private float moveRange;
-    [SerializeField] private GameObject suika;
-    [SerializeField] private float interval;
-    private float timer;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -16,12 +13,9 @@ public class playerController : MonoBehaviour
 
     void Update()
     {
-        timer -= Time.deltaTime;
-        if(Input.GetMouseButtonDown(0) && timer <= 0)
+        if (Input.GetMouseButtonDown(0))
         {
-            GameObject instance = Instantiate(suika);
-            instance.transform.position = transform.position + new Vector3(0, -1.0f, 0);
-            timer = interval;
+            SuikaManager.instance.DropSuika();
         }
     }
 
