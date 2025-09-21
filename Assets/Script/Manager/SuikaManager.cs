@@ -12,18 +12,22 @@ public class SuikaManager : MonoBehaviour
     [SerializeField] private int randomSuikaRangeMax;
     [SerializeField] private float interval;
     private bool isDroppable = true;
+    private bool firstSummon = true;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         instance = this;
-        nextSuika = Random.Range(randomSuikaRangeMin, randomSuikaRangeMax-1);
-        summonSuika();
+        nextSuika = Random.Range(randomSuikaRangeMin, randomSuikaRangeMax+1);
+        if(summonSuika()) firstSummon = false;
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
-        
+        if (firstSummon)
+        {
+            if(summonSuika()) firstSummon = false;
+        }
     }
     public void DropSuika()
     {
@@ -39,8 +43,9 @@ public class SuikaManager : MonoBehaviour
             Debug.LogError("currentSuikaが指定されていません。");
         }
     }
-    void summonSuika()
+    bool summonSuika()
     {
+        if (ComboManager.instance == null) return false;
         ComboManager.instance.ResetCombo();
         currentSuika = Instantiate(suika, new Vector3(PlayerTransform.position.x, PlayerTransform.position.y, 0), Quaternion.identity);
         currentSuika.transform.parent = PlayerTransform;
@@ -50,5 +55,6 @@ public class SuikaManager : MonoBehaviour
         suikaCtrl.level = nextSuika;
         nextSuika = Random.Range(randomSuikaRangeMin, randomSuikaRangeMax - 1);
         isDroppable = true;
+        return true;
     }
 }

@@ -712,7 +712,7 @@ MonoBehaviour:
   PlayerTransform: {fileID: 937999884}
   ParentTransform: {fileID: 1607813534}
   randomSuikaRangeMin: 0
-  randomSuikaRangeMax: 4
+  randomSuikaRangeMax: 2
   interval: 0
 --- !u!1 &425935807
 GameObject:
@@ -2546,11 +2546,11 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 815711406}
   - {fileID: 419645676}
   - {fileID: 1344223336}
   - {fileID: 1012949796}
   - {fileID: 969024397}
-  - {fileID: 815711406}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1124605628
