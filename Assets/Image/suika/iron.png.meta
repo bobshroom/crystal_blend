@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: e3ffb2ed89795684bbfd5f7b66c54747
+guid: 95f48a12d096e254c8238d3ad597da80
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -6134913050991585615
-    second: furit_mark18_mikan_0
+      213: 4750651203034271755
+    second: iron_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: furit_mark18_mikan_0
+      name: iron_0
       rect:
         serializedVersion: 2
-        x: 17
-        y: 13
-        width: 294
-        height: 307
+        x: 0
+        y: 0
+        width: 448
+        height: 558
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 1b61db395196cdaa0800000000000000
-      internalID: -6134913050991585615
+      spriteID: b00d3a06914bde140800000000000000
+      internalID: 4750651203034271755
       vertices: []
       indices: 
       edges: []

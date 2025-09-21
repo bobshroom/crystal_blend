@@ -7,7 +7,9 @@ public class SoundManager : MonoBehaviour
     private AudioSource audioSource;
     public AudioClip suikaMergeClip;
     public AudioClip comboMergeClip;
-    public List<float> comboMergePitches;
+    public AudioClip gameOverClipInto;
+    public AudioClip gameOverClipMiddle;
+    public AudioClip gameOverClipLast;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -49,7 +51,14 @@ public class SoundManager : MonoBehaviour
                     audioSource.PlayOneShot(comboMergeClip);
                 }
                 break;
-            case "gameOver":
+            case "gameOverInto":
+                audioSource.PlayOneShot(gameOverClipInto);
+                break;
+            case "gameOverMiddle":
+                audioSource.PlayOneShot(gameOverClipMiddle);
+                break;
+            case "gameOverLast":
+                audioSource.PlayOneShot(gameOverClipLast);
                 break;
             default:
                 break;

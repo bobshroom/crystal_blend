@@ -17,8 +17,8 @@ public class SuikaManager : MonoBehaviour
     void Start()
     {
         instance = this;
-        nextSuika = Random.Range(randomSuikaRangeMin, randomSuikaRangeMax+1);
-        if(summonSuika()) firstSummon = false;
+        nextSuika = Random.Range(randomSuikaRangeMin, randomSuikaRangeMax + 1);
+        if (summonSuika()) firstSummon = false;
     }
 
     // Update is called once per frame
@@ -26,20 +26,23 @@ public class SuikaManager : MonoBehaviour
     {
         if (firstSummon)
         {
-            if(summonSuika()) firstSummon = false;
+            if (summonSuika()) firstSummon = false;
         }
     }
     public void DropSuika()
     {
         if (currentSuika != null && isDroppable)
         {
+            GameManager.instance.summondSuikaCount += 1;
             isDroppable = false;
             currentSuika.transform.parent = ParentTransform;
             currentSuika.GetComponent<CircleCollider2D>().enabled = true;
             currentSuika.GetComponent<Rigidbody2D>().gravityScale = 1;
             currentSuika = null;
             Invoke("summonSuika", interval);
-        } else {
+        }
+        else
+        {
             Debug.LogError("currentSuikaが指定されていません。");
         }
     }
@@ -53,8 +56,14 @@ public class SuikaManager : MonoBehaviour
         currentSuika.GetComponent<Rigidbody2D>().gravityScale = 0;
         suikaController suikaCtrl = currentSuika.GetComponent<suikaController>();
         suikaCtrl.level = nextSuika;
-        nextSuika = Random.Range(randomSuikaRangeMin, randomSuikaRangeMax - 1);
+        nextSuika = Random.Range(randomSuikaRangeMin, randomSuikaRangeMax + 1);
         isDroppable = true;
         return true;
+    }
+    public void GameOver()
+    {
+        currentSuika.transform.parent = ParentTransform;
+        currentSuika.GetComponent<CircleCollider2D>().enabled = true;
+        currentSuika.GetComponent<Rigidbody2D>().gravityScale = 1;
     }
 }

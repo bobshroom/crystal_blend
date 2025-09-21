@@ -9,6 +9,7 @@ public class suikaController : MonoBehaviour
     public SuikaData CurrentSuikaData => suikaDataList[level];
     private SpriteRenderer sr => GetComponent<SpriteRenderer>();
     [SerializeField] private float defoltSize;
+    [SerializeField] private Sprite defsp;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -29,6 +30,7 @@ public class suikaController : MonoBehaviour
             suikaController otherSuika = collision.gameObject.GetComponent<suikaController>();
             if (otherSuika.level == level && level < maxLevel && GetInstanceID() < collision.gameObject.GetInstanceID())
             {
+                GameManager.instance.mergedSuikaCount += 1;
                 level++;
                 SoundManager.instance.PlaySound("suikaMerge");
                 ComboManager.instance.AddCombo();
@@ -42,8 +44,11 @@ public class suikaController : MonoBehaviour
     }
     void reSize()
     {
-        transform.localScale = new Vector3(CurrentSuikaData.size * defoltSize, CurrentSuikaData.size * defoltSize, 1);
-        //sr.sprite = CurrentSuikaData.sprite;
+        float changeSize = CurrentSuikaData.size * defoltSize * CurrentSuikaData.sizeOffset;
+        GetComponent<CircleCollider2D>().radius = 0.5f / CurrentSuikaData.sizeOffset;
+        transform.localScale = new Vector3(changeSize, changeSize, 1);
+        if (CurrentSuikaData.sprite != null) sr.sprite = CurrentSuikaData.sprite;
+        else sr.sprite = defsp;
         sr.color = CurrentSuikaData.color;
     }
 }

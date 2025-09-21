@@ -19,6 +19,7 @@ public class ComboManager : MonoBehaviour
     public void AddCombo()
     {
         currentCombo += 1;
+        if (currentCombo - 1 > GameManager.instance.maxCombo) GameManager.instance.maxCombo = currentCombo - 1;
     }
     public void ResetCombo()
     {

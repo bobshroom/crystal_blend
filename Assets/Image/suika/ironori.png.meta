@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 82955ec4257a6d24d8e8eba2040705d9
+guid: 2368fe988e94db54d8b5d79dda6dd897
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -5531779671076018025
-    second: space01_sun_0
+      213: 5501367837176778770
+    second: ironori_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: space01_sun_0
+      name: ironori_0
       rect:
         serializedVersion: 2
-        x: 26
-        y: 4
-        width: 525
-        height: 531
+        x: 0
+        y: 0
+        width: 500
+        height: 500
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 79869c1a2bb2b33b0800000000000000
-      internalID: -5531779671076018025
+      spriteID: 2105ea186e8c85c40800000000000000
+      internalID: 5501367837176778770
       vertices: []
       indices: 
       edges: []

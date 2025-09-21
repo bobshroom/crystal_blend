@@ -13,7 +13,7 @@ public class playerController : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetMouseButtonDown(0))
+        if ((Input.GetMouseButtonDown(0) || Input.GetKeyDown(KeyCode.Space)) && GameManager.instance.gameState == "playing")
         {
             SuikaManager.instance.DropSuika();
         }
