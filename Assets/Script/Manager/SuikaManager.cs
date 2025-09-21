@@ -41,6 +41,7 @@ public class SuikaManager : MonoBehaviour
     }
     void summonSuika()
     {
+        ComboManager.instance.ResetCombo();
         currentSuika = Instantiate(suika, new Vector3(PlayerTransform.position.x, PlayerTransform.position.y, 0), Quaternion.identity);
         currentSuika.transform.parent = PlayerTransform;
         currentSuika.GetComponent<CircleCollider2D>().enabled = false;

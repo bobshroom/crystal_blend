@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: level03
   m_EditorClassIdentifier: 
   level: 3
-  size: 1.752572
+  size: 2.6
   color: {r: 1, g: 0.3726415, b: 0.9244514, a: 1}
-  score: 0
-  sprite: {fileID: 0}
+  score: 120
+  sprite: {fileID: -8492830285150450172, guid: 82791b27f8d3e1c4d9041a4d37e9efff, type: 3}
   name: pineapple

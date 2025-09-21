@@ -102,7 +102,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 1
+  m_Mass: 0.2
   m_LinearDamping: 0
   m_AngularDamping: 0.05
   m_GravityScale: 1
@@ -178,3 +178,4 @@ MonoBehaviour:
   - {fileID: 11400000, guid: db59ded94bfb118409c66643c35d55f3, type: 2}
   - {fileID: 11400000, guid: 2232d64cfb883484e9fdc660dbf4fdc9, type: 2}
   level: 0
+  defoltSize: 0.75

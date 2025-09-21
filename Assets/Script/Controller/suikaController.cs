@@ -7,13 +7,14 @@ public class suikaController : MonoBehaviour
     private int maxLevel;
     public int level;
     public SuikaData CurrentSuikaData => suikaDataList[level];
+    private SpriteRenderer sr => GetComponent<SpriteRenderer>();
+    [SerializeField] private float defoltSize;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         maxLevel = suikaDataList.Count - 1;
-        transform.localScale = new Vector3(CurrentSuikaData.size, CurrentSuikaData.size, 1);
-        //GetComponent<SpriteRenderer>().sprite = CurrentSuikaData.sprite;
-        GetComponent<SpriteRenderer>().color = CurrentSuikaData.color;
+        
+        reSize();
     }
 
     // Update is called once per frame
@@ -29,13 +30,20 @@ public class suikaController : MonoBehaviour
             if (otherSuika.level == level && level < maxLevel && GetInstanceID() < collision.gameObject.GetInstanceID())
             {
                 level++;
-                transform.localScale = new Vector3(CurrentSuikaData.size, CurrentSuikaData.size, 1);
+                SoundManager.instance.PlaySound("suikaMerge");
+                ComboManager.instance.AddCombo();
+                UiManagerGame.instance.ComboEffect(transform.position, ComboManager.instance.currentCombo);
+                reSize();
                 transform.position = (transform.position + collision.transform.position) / 2;
-                //GetComponent<SpriteRenderer>().sprite = CurrentSuikaData.sprite;
-                GetComponent<SpriteRenderer>().color = CurrentSuikaData.color;
-                GameManager.instance.AddScore(CurrentSuikaData.score);
+                GameManager.instance.AddScore(CurrentSuikaData.score * ComboManager.instance.currentCombo);
                 Destroy(collision.gameObject);
             }
         }
+    }
+    void reSize()
+    {
+        transform.localScale = new Vector3(CurrentSuikaData.size * defoltSize, CurrentSuikaData.size * defoltSize, 1);
+        //sr.sprite = CurrentSuikaData.sprite;
+        sr.color = CurrentSuikaData.color;
     }
 }

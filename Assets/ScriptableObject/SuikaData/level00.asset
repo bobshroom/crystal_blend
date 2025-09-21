@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: level00
   m_EditorClassIdentifier: 
   level: 0
-  size: 3
-  color: {r: 0.007010073, g: 0.7264151, b: 0, a: 1}
+  size: 3.5
+  color: {r: 0.16145977, g: 0.7254902, b: 0, a: 1}
   score: 0
-  sprite: {fileID: 0}
+  sprite: {fileID: -5531779671076018025, guid: 82955ec4257a6d24d8e8eba2040705d9, type: 3}
   name: suika
