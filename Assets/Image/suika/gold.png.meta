@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 90dec09ebdb3af64f9560752a96dc361
+guid: dcb029ec4c69c7144bc7ffc239885ac1
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 4213628972611660739
-    second: furit_mark02_melon_0
+      213: -6301429047446442448
+    second: gold_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: furit_mark02_melon_0
+      name: gold_0
       rect:
         serializedVersion: 2
-        x: 28
-        y: 11
-        width: 292
-        height: 329
+        x: 0
+        y: 0
+        width: 240
+        height: 236
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 3cbefcfc931d97a30800000000000000
-      internalID: 4213628972611660739
+      spriteID: 03e60a1faa3dc88a0800000000000000
+      internalID: -6301429047446442448
       vertices: []
       indices: 
       edges: []

@@ -16,5 +16,6 @@ MonoBehaviour:
   size: 0.8
   color: {r: 1, g: 0.2783019, b: 0.518017, a: 1}
   score: 400
-  sprite: {fileID: -6134913050991585615, guid: e3ffb2ed89795684bbfd5f7b66c54747, type: 3}
+  sprite: {fileID: 0}
   name: pineapple
+  sizeOffset: 1

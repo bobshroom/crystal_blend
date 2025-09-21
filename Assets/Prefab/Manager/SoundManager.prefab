@@ -143,3 +143,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   suikaMergeClip: {fileID: 8300000, guid: ecf3652b866668c4a89ddcda12793528, type: 3}
+  comboMergeClip: {fileID: 8300000, guid: 5bd56362bcec48b4a86bfdd4e9b8412d, type: 3}
+  gameOverClipInto: {fileID: 8300000, guid: c8b12a00bafe4164583531ab7f87cbee, type: 3}
+  gameOverClipMiddle: {fileID: 8300000, guid: a1f02e2d6a5dac54584eb943f174dd3f, type: 3}
+  gameOverClipLast: {fileID: 8300000, guid: 36c6260447517d24ea2cace5b093e029, type: 3}

@@ -10,4 +10,5 @@ public class SuikaData : ScriptableObject
     public int score;
     public Sprite sprite;
     public string name;
+    public float sizeOffset = 1f;
 }

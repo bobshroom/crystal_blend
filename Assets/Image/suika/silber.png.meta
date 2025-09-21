@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: a2e8489998cef774c8392e638e69d200
+guid: 7bb538396978577448779f7939015715
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -60741290636426078
-    second: soccer_ball_0
+      213: 7841531628106802794
+    second: silber 1_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: soccer_ball_0
+      name: silber 1_0
       rect:
         serializedVersion: 2
-        x: 26
-        y: 31
-        width: 666
-        height: 665
+        x: 0
+        y: 0
+        width: 256
+        height: 256
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 2a4ca643e14382ff0800000000000000
-      internalID: -60741290636426078
+      spriteID: a66eb443877b2dc60800000000000000
+      internalID: 7841531628106802794
       vertices: []
       indices: 
       edges: []
@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      silber 1_0: 7841531628106802794
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

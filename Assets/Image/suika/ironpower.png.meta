@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: c67d45e7e6ab8aa468c686949dd545ac
+guid: b6e143395b7ce8f4496408c2ae4c755d
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -32288057769609252
-    second: cut_fruit_lomon_0
+      213: -8561959384600008298
+    second: ironpower_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: cut_fruit_lomon_0
+      name: ironpower_0
       rect:
         serializedVersion: 2
-        x: 5
-        y: 7
-        width: 379
-        height: 385
+        x: 0
+        y: 0
+        width: 400
+        height: 400
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: cd7b72abe2a4d8ff0800000000000000
-      internalID: -32288057769609252
+      spriteID: 699289b8d4fcd2980800000000000000
+      internalID: -8561959384600008298
       vertices: []
       indices: 
       edges: []

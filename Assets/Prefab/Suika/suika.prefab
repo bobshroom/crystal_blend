@@ -179,3 +179,4 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 2232d64cfb883484e9fdc660dbf4fdc9, type: 2}
   level: 0
   defoltSize: 0.75
+  defsp: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}

@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 82791b27f8d3e1c4d9041a4d37e9efff
+guid: 8bd70e496c0d93d4ca8092bfc9c8a71a
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -8492830285150450172
-    second: fruit_suika_kodama_0
+      213: 1041003540372436296
+    second: ruby_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: fruit_suika_kodama_0
+      name: ruby_0
       rect:
         serializedVersion: 2
-        x: 20
-        y: 13
-        width: 330
-        height: 381
+        x: 8
+        y: 7
+        width: 425
+        height: 436
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 40e8de34ad7632a80800000000000000
-      internalID: -8492830285150450172
+      spriteID: 845b2d95433627e00800000000000000
+      internalID: 1041003540372436296
       vertices: []
       indices: 
       edges: []
