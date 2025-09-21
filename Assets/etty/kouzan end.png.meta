@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      kouzan end_0: -6269767022112668242
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

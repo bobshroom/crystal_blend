@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      torokko_side_0: 7100070184417537095
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
