@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      fruit_suika_kodama_0: -8492830285150450172
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      cut_fruit_lomon_0: -32288057769609252
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

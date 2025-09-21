@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      furit_mark17_cherry_0: -1013800618048588311
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

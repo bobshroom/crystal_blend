@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: bd07130fdf9afe54aaa31215cdcad9a2
+guid: 9a316469e7467974b8a947247c68387d
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 8857579179056922388
-    second: furit_mark04_orange_0
+      213: -4351142866792051371
+    second: navigation_go_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: furit_mark04_orange_0
+      name: navigation_go_0
       rect:
         serializedVersion: 2
-        x: 10
-        y: 16
-        width: 307
-        height: 300
+        x: 19
+        y: 18
+        width: 458
+        height: 275
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 41f759975517cea70800000000000000
-      internalID: 8857579179056922388
+      spriteID: 55d82e1bd92ad93c0800000000000000
+      internalID: -4351142866792051371
       vertices: []
       indices: 
       edges: []
@@ -147,8 +147,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      furit_mark04_orange_0: 8857579179056922388
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

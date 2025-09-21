@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      furit_mark02_melon_0: 4213628972611660739
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

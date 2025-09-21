@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      furit_mark15_momo_0: -7228253382753515821
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
