@@ -1,10 +1,16 @@
 fileFormatVersion: 2
-guid: 8c295f4128e84a0419fa5610bd366152
+guid: 0577efcdc1c45194298a15e88be54468
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -2182124076254010665
-    second: rock_0
+      213: 929154384561029497
+    second: 2025-09-21_192422-removebg-preview_0
+  - first:
+      213: -2894619157175748089
+    second: 2025-09-21_192422-removebg-preview_1
+  - first:
+      213: 3617968862102495740
+    second: 2025-09-21_192422-removebg-preview_2
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +119,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: rock_0
+      name: 2025-09-21_192422-removebg-preview_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 435
-        height: 341
+        x: 200
+        y: 422
+        width: 34
+        height: 34
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +134,52 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 7d26d0bc6b987b1e0800000000000000
-      internalID: -2182124076254010665
+      spriteID: 971c1496df405ec00800000000000000
+      internalID: 929154384561029497
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2025-09-21_192422-removebg-preview_1
+      rect:
+        serializedVersion: 2
+        x: 231
+        y: 422
+        width: 95
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 70abf70863f34d7d0800000000000000
+      internalID: -2894619157175748089
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2025-09-21_192422-removebg-preview_2
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 10
+        width: 465
+        height: 404
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cf12b02e28b953230800000000000000
+      internalID: 3617968862102495740
       vertices: []
       indices: 
       edges: []
@@ -147,8 +197,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      rock_0: -2182124076254010665
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

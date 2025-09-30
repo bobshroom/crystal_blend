@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      sfaiya_0: 4055491904490270026
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
