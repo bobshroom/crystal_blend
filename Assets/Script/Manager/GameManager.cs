@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using unityroom.Api;
 
 public class GameManager : MonoBehaviour
 {
@@ -12,6 +13,7 @@ public class GameManager : MonoBehaviour
     public int maxCombo;
     public Transform suikatati;
     public GameObject platform;
+    private float timer = 10f;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -21,6 +23,7 @@ public class GameManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        timer -= Time.deltaTime;
         if (Input.GetKeyDown(KeyCode.Space))
         {
             UiManagerGame.instance.ComboEffect(Vector3.zero, 2);
@@ -28,6 +31,11 @@ public class GameManager : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.R))// && gameState == "gameOver")
         {
             Reset();
+        }
+        if (timer <= 0)
+        {
+            timer = 10f;
+            uploadScoreToUnityroom();
         }
     }
 
@@ -53,6 +61,7 @@ public class GameManager : MonoBehaviour
     }
     public void gameOver()
     {
+        uploadScoreToUnityroom();
         gameState = "gameOver";
         if (score > highScore) highScore = score;
         Time.timeScale = 0.5f;
@@ -97,5 +106,14 @@ public class GameManager : MonoBehaviour
         maxCombo = 0;
         Time.timeScale = 1f;
         SceneManager.LoadScene("game");
+    }
+    public void uploadScoreToUnityroom()
+    {
+        UnityroomApiClient.Instance.SendScore(1, score, ScoreboardWriteMode.HighScoreDesc);
+        
+    }
+    public void upLoadMaxComboToUnityroom()
+    {
+        UnityroomApiClient.Instance.SendScore(2, maxCombo, ScoreboardWriteMode.HighScoreDesc);
     }
 }
