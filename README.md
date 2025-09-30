@@ -6,8 +6,9 @@ https://unityroom.com/games/crystalblend
 完全版公開まで少々お待ちください。  
  
 # DEMO
- 
-省略
+  
+ ![final](https://github.com/user-attachments/assets/917b294d-455b-4ab0-acb8-c5a43e5df0d3)
+
  
 # Features
  
