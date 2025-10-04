@@ -10,6 +10,7 @@ public class SoundManager : MonoBehaviour
     public AudioClip gameOverClipInto;
     public AudioClip gameOverClipMiddle;
     public AudioClip gameOverClipLast;
+    public AudioClip dodonClip;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -59,6 +60,9 @@ public class SoundManager : MonoBehaviour
                 break;
             case "gameOverLast":
                 audioSource.PlayOneShot(gameOverClipLast);
+                break;
+            case "dodon":
+                audioSource.PlayOneShot(dodonClip);
                 break;
             default:
                 break;

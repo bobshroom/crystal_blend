@@ -175,8 +175,6 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 8abc5befc747eb64297acc205bad1ac9, type: 2}
   - {fileID: 11400000, guid: 9c77eeaccb0db2040b198d566d1af57b, type: 2}
   - {fileID: 11400000, guid: 0348f475b31904e448d7315019afb3dc, type: 2}
-  - {fileID: 11400000, guid: db59ded94bfb118409c66643c35d55f3, type: 2}
-  - {fileID: 11400000, guid: 2232d64cfb883484e9fdc660dbf4fdc9, type: 2}
   level: 0
   defoltSize: 0.75
   defsp: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}

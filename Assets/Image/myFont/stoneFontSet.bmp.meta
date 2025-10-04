@@ -1,0 +1,1833 @@
+fileFormatVersion: 2
+guid: f5c866cb8f438d14eb7c45ae3c60a1aa
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 360074289209292765
+    second: stoneFontSet_0
+  - first:
+      213: -1584356497436213493
+    second: stoneFontSet_1
+  - first:
+      213: 7437164008213288413
+    second: stoneFontSet_2
+  - first:
+      213: 4893360633840381702
+    second: stoneFontSet_3
+  - first:
+      213: -3018737748915854377
+    second: stoneFontSet_4
+  - first:
+      213: -2647310381093075396
+    second: stoneFontSet_5
+  - first:
+      213: 2161650948427493614
+    second: stoneFontSet_6
+  - first:
+      213: -8211153694104027272
+    second: stoneFontSet_7
+  - first:
+      213: 9205517623796315445
+    second: stoneFontSet_8
+  - first:
+      213: -6016946924805779024
+    second: stoneFontSet_9
+  - first:
+      213: -863564510422103767
+    second: stoneFontSet_10
+  - first:
+      213: -8229547575106990770
+    second: stoneFontSet_11
+  - first:
+      213: 6833280656067708997
+    second: stoneFontSet_12
+  - first:
+      213: -2237803336550779004
+    second: stoneFontSet_13
+  - first:
+      213: 3425210488259712976
+    second: stoneFontSet_14
+  - first:
+      213: 1496967753458266517
+    second: stoneFontSet_15
+  - first:
+      213: 5179515424443002321
+    second: stoneFontSet_16
+  - first:
+      213: 58661980236458417
+    second: stoneFontSet_17
+  - first:
+      213: -6149953250803715461
+    second: stoneFontSet_18
+  - first:
+      213: 9003576695255734746
+    second: stoneFontSet_19
+  - first:
+      213: -88817196366151074
+    second: stoneFontSet_20
+  - first:
+      213: -6343656804208829820
+    second: stoneFontSet_21
+  - first:
+      213: 8176500072265759833
+    second: stoneFontSet_22
+  - first:
+      213: 68119226066403987
+    second: stoneFontSet_23
+  - first:
+      213: 8104581196185484899
+    second: stoneFontSet_24
+  - first:
+      213: 6819649508819671132
+    second: stoneFontSet_25
+  - first:
+      213: -4836391908971211503
+    second: stoneFontSet_26
+  - first:
+      213: -8543443304846877074
+    second: stoneFontSet_27
+  - first:
+      213: -5782496294521664306
+    second: stoneFontSet_28
+  - first:
+      213: 105738972677408789
+    second: stoneFontSet_29
+  - first:
+      213: -5356218839109455540
+    second: stoneFontSet_30
+  - first:
+      213: -6542567816989263519
+    second: stoneFontSet_31
+  - first:
+      213: -6202304025088352326
+    second: stoneFontSet_32
+  - first:
+      213: 64250619439066532
+    second: stoneFontSet_33
+  - first:
+      213: -1844338742443865161
+    second: stoneFontSet_34
+  - first:
+      213: -1627936424002271385
+    second: stoneFontSet_35
+  - first:
+      213: 7143001318756898918
+    second: stoneFontSet_36
+  - first:
+      213: 8137161346525750496
+    second: stoneFontSet_37
+  - first:
+      213: 5236574625878369883
+    second: stoneFontSet_38
+  - first:
+      213: -5677787130866508396
+    second: stoneFontSet_39
+  - first:
+      213: 3454858250902345592
+    second: stoneFontSet_40
+  - first:
+      213: 7032752881582809952
+    second: stoneFontSet_41
+  - first:
+      213: -730563869977575917
+    second: stoneFontSet_42
+  - first:
+      213: 5974702656261619372
+    second: stoneFontSet_43
+  - first:
+      213: 3092111300774861807
+    second: stoneFontSet_44
+  - first:
+      213: 8209799706006275730
+    second: stoneFontSet_45
+  - first:
+      213: -588191182264227282
+    second: stoneFontSet_46
+  - first:
+      213: -8693229160509594109
+    second: stoneFontSet_47
+  - first:
+      213: -8850577712788328322
+    second: stoneFontSet_48
+  - first:
+      213: -5118380816263083525
+    second: stoneFontSet_49
+  - first:
+      213: 4915997931349549325
+    second: stoneFontSet_50
+  - first:
+      213: -7169313957039661228
+    second: stoneFontSet_51
+  - first:
+      213: -8692063470215688091
+    second: stoneFontSet_52
+  - first:
+      213: -7491316314680083218
+    second: stoneFontSet_53
+  - first:
+      213: -4399766979432912418
+    second: stoneFontSet_54
+  - first:
+      213: -4342346359586216297
+    second: stoneFontSet_55
+  - first:
+      213: 3131593677777064921
+    second: stoneFontSet_56
+  - first:
+      213: 7516559752793005049
+    second: stoneFontSet_57
+  - first:
+      213: 555191082800015688
+    second: stoneFontSet_58
+  - first:
+      213: -8734025795193767461
+    second: stoneFontSet_59
+  - first:
+      213: -7237968406583139747
+    second: stoneFontSet_60
+  - first:
+      213: 4403906076668316368
+    second: stoneFontSet_61
+  - first:
+      213: 857567563929810231
+    second: stoneFontSet_62
+  - first:
+      213: 6048336095750338451
+    second: stoneFontSet_63
+  - first:
+      213: -834194604958236250
+    second: stoneFontSet_64
+  - first:
+      213: 6046722527334998660
+    second: stoneFontSet_65
+  - first:
+      213: -5596627826874614214
+    second: stoneFontSet_66
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: stoneFontSet_A
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 1953
+        width: 163
+        height: 211
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dd7321588ad3ff400800000000000000
+      internalID: 360074289209292765
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stoneFontSet_B
+      rect:
+        serializedVersion: 2
+        x: 248
+        y: 1955
+        width: 128
+        height: 207
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b0f7bbce82c330ae0800000000000000
+      internalID: -1584356497436213493
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stoneFontSet_C
+      rect:
+        serializedVersion: 2
+        x: 391
+        y: 1954
+        width: 137
+        height: 208
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dd59fddf24d163760800000000000000
+      internalID: 7437164008213288413
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stoneFontSet_D
+      rect:
+        serializedVersion: 2
+        x: 544
+        y: 1954
+        width: 135
+        height: 209
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 60fafe10295b8e340800000000000000
+      internalID: 4893360633840381702
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stoneFontSet_E
+      rect:
+        serializedVersion: 2
+        x: 698
+        y: 1954
+        width: 122
+        height: 208
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7d3eec5e20a4b16d0800000000000000
+      internalID: -3018737748915854377
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stoneFontSet_G
+      rect:
+        serializedVersion: 2
+        x: 968
+        y: 1954
+        width: 147
+        height: 210
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c364eb40c3dd24bd0800000000000000
+      internalID: -2647310381093075396
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stoneFontSet_F
+      rect:
+        serializedVersion: 2
+        x: 833
+        y: 1954
+        width: 125
+        height: 210
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ee0386da51abffd10800000000000000
+      internalID: 2161650948427493614
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stoneFontSet_H
+      rect:
+        serializedVersion: 2
+        x: 1133
+        y: 1953
+        width: 155
+        height: 212
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 87ffac2483f1c0e80800000000000000
+      internalID: -8211153694104027272
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stoneFontSet_I
+      rect:
+        serializedVersion: 2
+        x: 1306
+        y: 1957
+        width: 82
+        height: 208
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5353af3818190cf70800000000000000
+      internalID: 9205517623796315445
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stoneFontSet_S
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 1371
+        width: 150
+        height: 213
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0b1929aa6a28f7ca0800000000000000
+      internalID: -6016946924805779024
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stoneFontSet_J
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 1665
+        width: 150
+        height: 210
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 92908a337a00404f0800000000000000
+      internalID: -863564510422103767
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stoneFontSet_T
+      rect:
+        serializedVersion: 2
+        x: 215
+        y: 1372
+        width: 146
+        height: 209
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e4d029b1516cacd80800000000000000
+      internalID: -8229547575106990770
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stoneFontSet_K
+      rect:
+        serializedVersion: 2
+        x: 222
+        y: 1666
+        width: 148
+        height: 207
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 548c67b6d80b4de50800000000000000
+      internalID: 6833280656067708997
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stoneFontSet_U
+      rect:
+        serializedVersion: 2
+        x: 373
+        y: 1372
+        width: 156
+        height: 211
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 487f4b7c8b9b1f0e0800000000000000
+      internalID: -2237803336550779004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stoneFontSet_L
+      rect:
+        serializedVersion: 2
+        x: 387
+        y: 1663
+        width: 110
+        height: 211
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0d799a1aacac88f20800000000000000
+      internalID: 3425210488259712976
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stoneFontSet_M
+      rect:
+        serializedVersion: 2
+        x: 506
+        y: 1663
+        width: 190
+        height: 211
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 59138119d3c46c410800000000000000
+      internalID: 1496967753458266517
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stoneFontSet_V
+      rect:
+        serializedVersion: 2
+        x: 540
+        y: 1373
+        width: 153
+        height: 210
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1dde49616d551e740800000000000000
+      internalID: 5179515424443002321
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stoneFontSet_W
+      rect:
+        serializedVersion: 2
+        x: 707
+        y: 1373
+        width: 229
+        height: 209
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1b9a0dd92c860d000800000000000000
+      internalID: 58661980236458417
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stoneFontSet_N
+      rect:
+        serializedVersion: 2
+        x: 705
+        y: 1664
+        width: 159
+        height: 210
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b72f59c2a1af6aaa0800000000000000
+      internalID: -6149953250803715461
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stoneFontSet_O
+      rect:
+        serializedVersion: 2
+        x: 870
+        y: 1668
+        width: 148
+        height: 207
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ad914b42d4123fc70800000000000000
+      internalID: 9003576695255734746
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stoneFontSet_X
+      rect:
+        serializedVersion: 2
+        x: 953
+        y: 1372
+        width: 167
+        height: 209
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e5246a00b3574cef0800000000000000
+      internalID: -88817196366151074
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stoneFontSet_P
+      rect:
+        serializedVersion: 2
+        x: 1027
+        y: 1668
+        width: 148
+        height: 207
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 48a94282fbdc6f7a0800000000000000
+      internalID: -6343656804208829820
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stoneFontSet_22
+      rect:
+        serializedVersion: 2
+        x: 1136
+        y: 1371
+        width: 132
+        height: 210
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 95c3b59ae73c87170800000000000000
+      internalID: 8176500072265759833
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stoneFontSet_Q
+      rect:
+        serializedVersion: 2
+        x: 1183
+        y: 1660
+        width: 143
+        height: 216
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3920010431202f000800000000000000
+      internalID: 68119226066403987
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stoneFontSet_Z
+      rect:
+        serializedVersion: 2
+        x: 1282
+        y: 1372
+        width: 190
+        height: 210
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 36e32f378a1497070800000000000000
+      internalID: 8104581196185484899
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stoneFontSet_R
+      rect:
+        serializedVersion: 2
+        x: 1332
+        y: 1664
+        width: 142
+        height: 212
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c581dd1a81344ae50800000000000000
+      internalID: 6819649508819671132
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stoneFontSet_27
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 1116
+        width: 147
+        height: 228
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e6e99ef44979f6980800000000000000
+      internalID: -8543443304846877074
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stoneFontSet_28
+      rect:
+        serializedVersion: 2
+        x: 518
+        y: 1116
+        width: 149
+        height: 232
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ecc0602d14270cfa0800000000000000
+      internalID: -5782496294521664306
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stoneFontSet_29
+      rect:
+        serializedVersion: 2
+        x: 820
+        y: 1116
+        width: 102
+        height: 232
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5180a511909a77100800000000000000
+      internalID: 105738972677408789
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stoneFontSet_30
+      rect:
+        serializedVersion: 2
+        x: 1086
+        y: 1116
+        width: 141
+        height: 230
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c4130a32853eaa5b0800000000000000
+      internalID: -5356218839109455540
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stoneFontSet_31
+      rect:
+        serializedVersion: 2
+        x: 1237
+        y: 1115
+        width: 68
+        height: 231
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 169b3750c312435a0800000000000000
+      internalID: -6542567816989263519
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stoneFontSet_32
+      rect:
+        serializedVersion: 2
+        x: 1322
+        y: 1082
+        width: 98
+        height: 265
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: abf12a3b95dfce9a0800000000000000
+      internalID: -6202304025088352326
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stoneFontSet_33
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 1115
+        width: 147
+        height: 185
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4ada344199344e000800000000000000
+      internalID: 64250619439066532
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stoneFontSet_34
+      rect:
+        serializedVersion: 2
+        x: 391
+        y: 1117
+        width: 121
+        height: 181
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7bb842b7fa79766e0800000000000000
+      internalID: -1844338742443865161
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stoneFontSet_35
+      rect:
+        serializedVersion: 2
+        x: 671
+        y: 1114
+        width: 146
+        height: 182
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 767cc6292786869e0800000000000000
+      internalID: -1627936424002271385
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stoneFontSet_36
+      rect:
+        serializedVersion: 2
+        x: 922
+        y: 1077
+        width: 161
+        height: 220
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 668d6aaaad9012360800000000000000
+      internalID: 7143001318756898918
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stoneFontSet_37
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 834
+        width: 167
+        height: 227
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0e4e4b3d1210de070800000000000000
+      internalID: 8137161346525750496
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stoneFontSet_38
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 837
+        width: 71
+        height: 222
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b56ed4fa0ec0ca840800000000000000
+      internalID: 5236574625878369883
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stoneFontSet_39
+      rect:
+        serializedVersion: 2
+        x: 334
+        y: 835
+        width: 220
+        height: 177
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 49dda6acfa27431b0800000000000000
+      internalID: -5677787130866508396
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stoneFontSet_40
+      rect:
+        serializedVersion: 2
+        x: 562
+        y: 835
+        width: 142
+        height: 181
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8779c5a464f12ff20800000000000000
+      internalID: 3454858250902345592
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stoneFontSet_41
+      rect:
+        serializedVersion: 2
+        x: 710
+        y: 835
+        width: 147
+        height: 181
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 06329d31c7b599160800000000000000
+      internalID: 7032752881582809952
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stoneFontSet_42
+      rect:
+        serializedVersion: 2
+        x: 859
+        y: 793
+        width: 158
+        height: 223
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 31e704ce7048cd5f0800000000000000
+      internalID: -730563869977575917
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stoneFontSet_43
+      rect:
+        serializedVersion: 2
+        x: 1022
+        y: 797
+        width: 153
+        height: 216
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cae7e0919686ae250800000000000000
+      internalID: 5974702656261619372
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stoneFontSet_44
+      rect:
+        serializedVersion: 2
+        x: 1182
+        y: 836
+        width: 102
+        height: 178
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: feb18a868d269ea20800000000000000
+      internalID: 3092111300774861807
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stoneFontSet_45
+      rect:
+        serializedVersion: 2
+        x: 1306
+        y: 833
+        width: 128
+        height: 180
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2964c91d5511fe170800000000000000
+      internalID: 8209799706006275730
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stoneFontSet_47
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 560
+        width: 128
+        height: 214
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 30622c023227b5780800000000000000
+      internalID: -8693229160509594109
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stoneFontSet_48
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 281
+        width: 120
+        height: 208
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e70334c667e6c2580800000000000000
+      internalID: -8850577712788328322
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stoneFontSet_49
+      rect:
+        serializedVersion: 2
+        x: 243
+        y: 558
+        width: 156
+        height: 185
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bf9077514cbd7f8b0800000000000000
+      internalID: -5118380816263083525
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stoneFontSet_50
+      rect:
+        serializedVersion: 2
+        x: 405
+        y: 560
+        width: 165
+        height: 178
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d0125ae8212293440800000000000000
+      internalID: 4915997931349549325
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stoneFontSet_51
+      rect:
+        serializedVersion: 2
+        x: 489
+        y: 281
+        width: 120
+        height: 206
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 45f9663d0fa718c90800000000000000
+      internalID: -7169313957039661228
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stoneFontSet_52
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 561
+        width: 228
+        height: 182
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 56015ac83569f5780800000000000000
+      internalID: -8692063470215688091
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stoneFontSet_53
+      rect:
+        serializedVersion: 2
+        x: 773
+        y: 284
+        width: 115
+        height: 204
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eecb763a08f790890800000000000000
+      internalID: -7491316314680083218
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stoneFontSet_54
+      rect:
+        serializedVersion: 2
+        x: 826
+        y: 562
+        width: 169
+        height: 179
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ed968604e33e0f2c0800000000000000
+      internalID: -4399766979432912418
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stoneFontSet_55
+      rect:
+        serializedVersion: 2
+        x: 1003
+        y: 524
+        width: 154
+        height: 219
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 79627212ef2ecb3c0800000000000000
+      internalID: -4342346359586216297
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stoneFontSet_56
+      rect:
+        serializedVersion: 2
+        x: 1242
+        y: 560
+        width: 158
+        height: 184
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9d3d2c8abd7a57b20800000000000000
+      internalID: 3131593677777064921
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stoneFontSet_57
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 280
+        width: 124
+        height: 208
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9fb993e454f205860800000000000000
+      internalID: 7516559752793005049
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stoneFontSet_58
+      rect:
+        serializedVersion: 2
+        x: 375
+        y: 50
+        width: 129
+        height: 208
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 84962c8295f64b700800000000000000
+      internalID: 555191082800015688
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stoneFontSet_59
+      rect:
+        serializedVersion: 2
+        x: 514
+        y: 52
+        width: 130
+        height: 209
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bd9706a60d18ac680800000000000000
+      internalID: -8734025795193767461
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stoneFontSet_60
+      rect:
+        serializedVersion: 2
+        x: 632
+        y: 284
+        width: 136
+        height: 203
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d52ac1625129d8b90800000000000000
+      internalID: -7237968406583139747
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stoneFontSet_61
+      rect:
+        serializedVersion: 2
+        x: 657
+        y: 51
+        width: 121
+        height: 208
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0dacffb6e31dd1d30800000000000000
+      internalID: 4403906076668316368
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stoneFontSet_62
+      rect:
+        serializedVersion: 2
+        x: 794
+        y: 52
+        width: 128
+        height: 209
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 735fee2e721b6eb00800000000000000
+      internalID: 857567563929810231
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stoneFontSet_63
+      rect:
+        serializedVersion: 2
+        x: 899
+        y: 282
+        width: 120
+        height: 205
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3973f5532a100f350800000000000000
+      internalID: 6048336095750338451
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stoneFontSet_64
+      rect:
+        serializedVersion: 2
+        x: 920
+        y: 33
+        width: 64
+        height: 86
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6a1cae13d685c64f0800000000000000
+      internalID: -834194604958236250
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stoneFontSet_65
+      rect:
+        serializedVersion: 2
+        x: 982
+        y: 53
+        width: 60
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 482a7290a164ae350800000000000000
+      internalID: 6046722527334998660
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stoneFontSet_66
+      rect:
+        serializedVersion: 2
+        x: 1026
+        y: 281
+        width: 121
+        height: 207
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a3e7217c4a8c452b0800000000000000
+      internalID: -5596627826874614214
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stoneFontSet_0
+      rect:
+        serializedVersion: 2
+        x: 1109
+        y: 52
+        width: 59
+        height: 208
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2f3e53add2fbef438d8bd3295993b08
+      internalID: 1210459756
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stoneFontSet_1
+      rect:
+        serializedVersion: 2
+        x: 982
+        y: 52
+        width: 62
+        height: 190
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1690c38b514c42f4d8b0c7673db5b4f3
+      internalID: 1413938882
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 704dd3e3a9566964a84fb206f920da10
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      stoneFontSet_0: 1210459756
+      stoneFontSet_1: 1413938882
+      stoneFontSet_2: 1071560913
+      stoneFontSet_A: 360074289209292765
+      stoneFontSet_B: -1584356497436213493
+      stoneFontSet_C: 7437164008213288413
+      stoneFontSet_D: 4893360633840381702
+      stoneFontSet_E: -3018737748915854377
+      stoneFontSet_F: 2161650948427493614
+      stoneFontSet_G: -2647310381093075396
+      stoneFontSet_H: -8211153694104027272
+      stoneFontSet_I: 9205517623796315445
+      stoneFontSet_J: -863564510422103767
+      stoneFontSet_K: 6833280656067708997
+      stoneFontSet_L: 3425210488259712976
+      stoneFontSet_M: 1496967753458266517
+      stoneFontSet_N: -6149953250803715461
+      stoneFontSet_O: 9003576695255734746
+      stoneFontSet_P: -6343656804208829820
+      stoneFontSet_Q: 68119226066403987
+      stoneFontSet_R: 6819649508819671132
+      stoneFontSet_S: -6016946924805779024
+      stoneFontSet_T: -8229547575106990770
+      stoneFontSet_U: -2237803336550779004
+      stoneFontSet_V: 5179515424443002321
+      stoneFontSet_W: 58661980236458417
+      stoneFontSet_X: -88817196366151074
+      stoneFontSet_Z: 8104581196185484899
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

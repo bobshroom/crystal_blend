@@ -2,11 +2,13 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using System.Collections;
+using UnityEngine.TextCore.Text;
 
 public class UiManagerGame : MonoBehaviour
 {
     public Transform canvasParent;
     public static UiManagerGame instance;
+    public TMP_SpriteAsset spriteAsset;
     public TMP_Text fpsText;
     private float showFpsInterval = 0.4f;
     public GameObject nextColor;
@@ -16,12 +18,15 @@ public class UiManagerGame : MonoBehaviour
     [SerializeField] private List<float> nextSizes;
     public TMP_Text scoreText;
     public TMP_Text comboEffectText;
+    public GameObject gameOverImage;
     [Tooltip("入れた順番に表示される(ただし最初と最後は別)")]
     public List<TMP_Text> gameOverTexts;
+    public TMP_Text test;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         instance = this;
+        changeToSpriteAsset(test, spriteAsset);
     }
 
     // Update is called once per frame
@@ -35,6 +40,7 @@ public class UiManagerGame : MonoBehaviour
         }
         UpdateNextColor();
         UpdateScore();
+        // if (Input.GetKeyDown(KeyCode.T)) makeStoneTips(new Vector3(0, 0, 0));    //テスト用Tキーで石チップス生成
     }
     void UpdateFps()
     {
@@ -63,16 +69,16 @@ public class UiManagerGame : MonoBehaviour
     public IEnumerator GameOver() //Time.timeScale = 0.5fなので注意
     {
         yield return new WaitForSeconds(0.5f);
-        gameOverTexts[0].gameObject.SetActive(true);
-        SoundManager.instance.PlaySound("gameOverInto");
+        gameOverImage.gameObject.SetActive(true);
         yield return new WaitForSeconds(0.75f);
-        for (int i = 1; i < gameOverTexts.Count - 1; i++)
+        for (int i = 0; i < gameOverTexts.Count - 1; i++)
         {
             gameOverTexts[i].gameObject.SetActive(true);
-            if(i==1) gameOverTexts[i].text = "Score: " + GameManager.instance.score.ToString();
-            else if(i==2) gameOverTexts[i].text = "Merged: " + GameManager.instance.mergedSuikaCount.ToString();
-            else if(i==3) gameOverTexts[i].text = "Summoned: " + GameManager.instance.summondSuikaCount.ToString();
-            else if(i==4) gameOverTexts[i].text = "Max Combo: " + GameManager.instance.maxCombo.ToString();
+            if (i == 0) gameOverTexts[i].text = "SCORE: " + GameManager.instance.score.ToString();
+            else if (i == 1) gameOverTexts[i].text = "MERGED: " + GameManager.instance.mergedSuikaCount.ToString();
+            else if (i == 2) gameOverTexts[i].text = "SUMMONED: " + GameManager.instance.summondSuikaCount.ToString();
+            else if (i == 3) gameOverTexts[i].text = "MAX COMBO: " + GameManager.instance.maxCombo.ToString();
+            changeToSpriteAsset(gameOverTexts[i], spriteAsset);
             SoundManager.instance.PlaySound("gameOverMiddle");
             yield return new WaitForSeconds(0.15f);
         }
@@ -86,8 +92,83 @@ public class UiManagerGame : MonoBehaviour
         else if (score >= 2000) rank = "B";
         else if (score >= 1000) rank = "C";
         else rank = "D";
-        gameOverTexts[gameOverTexts.Count - 1].text = "Your Rank: " + rank;
+
         gameOverTexts[gameOverTexts.Count - 1].gameObject.SetActive(true);
+
+        gameOverTexts[gameOverTexts.Count - 1].text = "YOUR RANK: ";
+        changeToSpriteAsset(gameOverTexts[gameOverTexts.Count - 1], spriteAsset);
+        SoundManager.instance.PlaySound("dodon");
+        yield return new WaitForSeconds(0.4f);
+
+        gameOverTexts[gameOverTexts.Count - 1].text = "YOUR RANK: " + rank;
+        changeToSpriteAsset(gameOverTexts[gameOverTexts.Count - 1], spriteAsset);
+    
         SoundManager.instance.PlaySound("gameOverLast");
+    }
+
+    void changeToSpriteAsset(TMP_Text text, TMP_SpriteAsset spriteAsset)
+    {
+        text.spriteAsset = spriteAsset;
+        string spriteText = text.text;
+        text.text = "";
+        for (int i = 0; i < spriteText.Length; i++)
+        {
+            int id = changeToSpriteAssetId(spriteText[i]);
+            if (id == 100) text.text += " "; //スペース
+            else if (id == 101) text.text += "\n"; //改行
+            else if (id == -1)
+            {
+                text.text += "<sprite=" + 63 + ">"; //不明な文字は？にする
+                Debug.LogError("不明な文字:" + spriteText[i]);
+            }
+            else text.text += "<sprite=" + id + ">";
+        }
+    }
+    int changeToSpriteAssetId(char c)
+    {
+        if (c >= '0' && c <= '9') return c - '0';
+        else if (c >= 'A' && c <= 'Z') return c - 'A' + 10;
+        else if (c >= 'a' && c <= 'z') return c - 'a' + 36;
+        else
+        {
+            switch (c)
+            {
+                case '!': return 62;
+                case '?': return 63;
+                case '.': return 64;
+                case ',': return 65;
+                case ':': return 66;
+                case ';': return 67;
+                case '+': return 68;
+                case '-': return 69;
+                case '*': return 70;
+                case '/': return 71;
+                case '=': return 72;
+                case '%': return 73;
+                case '#': return 74;
+                case '&': return 75;
+                case '@': return 76;
+                case '$': return 77;
+                case '^': return 78;
+                case '(': return 79;
+                case ')': return 80;
+                case '[': return 81;
+                case ']': return 82;
+                case '{': return 83;
+                case '}': return 84;
+                case '<': return 85;
+                case '>': return 86;
+                case '_': return 87;
+                case '"': return 88;
+                case '\'': return 89;
+                case '\\': return 90;
+                case '|': return 91;
+                case '~': return 92;
+                case '`': return 93;
+                case ' ': return 100; //スペース
+                case '\n': return 101; //改行
+                default: return -1;
+            }
+        }
     }
 }

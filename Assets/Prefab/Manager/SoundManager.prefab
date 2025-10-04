@@ -147,3 +147,4 @@ MonoBehaviour:
   gameOverClipInto: {fileID: 8300000, guid: c8b12a00bafe4164583531ab7f87cbee, type: 3}
   gameOverClipMiddle: {fileID: 8300000, guid: a1f02e2d6a5dac54584eb943f174dd3f, type: 3}
   gameOverClipLast: {fileID: 8300000, guid: 36c6260447517d24ea2cace5b093e029, type: 3}
+  dodonClip: {fileID: 8300000, guid: 7950b09e7b2857d44a08573834272b0a, type: 3}

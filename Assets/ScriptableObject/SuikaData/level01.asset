@@ -16,6 +16,6 @@ MonoBehaviour:
   size: 3.2
   color: {r: 1, g: 1, b: 1, a: 1}
   score: 100
-  sprite: {fileID: 5501367837176778770, guid: 2368fe988e94db54d8b5d79dda6dd897, type: 3}
+  sprite: {fileID: 2203538656940257534, guid: b4e0d9de8e1260841b5c836efefc14ff, type: 3}
   name: melon
-  sizeOffset: 0.4
+  sizeOffset: 0.33

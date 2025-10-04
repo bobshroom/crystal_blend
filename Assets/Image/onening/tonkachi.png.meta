@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      tonkachi_0: 5874516188822170767
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
