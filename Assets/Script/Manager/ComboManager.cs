@@ -22,7 +22,7 @@ public class ComboManager : MonoBehaviour
         if (currentCombo - 1 > GameManager.instance.maxCombo)
         {
             GameManager.instance.maxCombo = currentCombo - 1;
-            GameManager.instance.upLoadMaxComboToUnityroom();
+            MasterGameManager.instance.upLoadMaxComboToUnityroom();
         }
     }
     public void ResetCombo()

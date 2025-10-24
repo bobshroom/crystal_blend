@@ -3,6 +3,7 @@ using TMPro;
 using UnityEngine;
 using System.Collections;
 using UnityEngine.TextCore.Text;
+using UnityEngine.UI;
 
 public class UiManagerGame : MonoBehaviour
 {
@@ -21,10 +22,18 @@ public class UiManagerGame : MonoBehaviour
     public GameObject gameOverImage;
     [Tooltip("入れた順番に表示される(ただし最初と最後は別)")]
     public List<TMP_Text> gameOverTexts;
+    public GameObject gameOverPanel;
     public TMP_Text test;
+    public GameObject settingPanel;
+    public GameObject comboEffect;
+    private Image comboEffectImage;
+    private bool isComboEffectPlaying = false;
+    private bool stopComboEffect = false;
+    public bool isSettingPanelActive = false;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        comboEffectImage = comboEffect.GetComponent<Image>();
         instance = this;
         changeToSpriteAsset(test, spriteAsset);
     }
@@ -52,18 +61,20 @@ public class UiManagerGame : MonoBehaviour
     {
         Sprite sprite = suikaSprites[SuikaManager.instance.nextSuika];
         //Color color = suikaColors[SuikaManager.instance.nextSuika];
-        nextColor.GetComponent<SpriteRenderer>().sprite = sprite;
+        nextColor.GetComponent<UnityEngine.UI.Image>().sprite = sprite;
         nextColor.transform.localScale = new Vector3(211.68f * nextSizes[SuikaManager.instance.nextSuika], 211.68f * nextSizes[SuikaManager.instance.nextSuika], 1);
     }
     void UpdateScore()
     {
-        scoreText.text = "Score: " + GameManager.instance.score.ToString();
+        scoreText.text = "SCORE: " + GameManager.instance.score.ToString();
+        changeToSpriteAsset(scoreText, spriteAsset);
     }
     public void ComboEffect(Vector3 pos, int combo)
     {
         Vector3 comboPos = pos + new Vector3(0, 0.5f, 0);
         if (combo <= 1) return;
         GameObject instnace = Instantiate(comboEffectText.gameObject, comboPos, Quaternion.identity, canvasParent);
+        StartCoroutine(ComboEffectCoroutine(combo));
     }
 
     public IEnumerator GameOver() //Time.timeScale = 0.5fなので注意
@@ -79,34 +90,41 @@ public class UiManagerGame : MonoBehaviour
             else if (i == 2) gameOverTexts[i].text = "SUMMONED: " + GameManager.instance.summondSuikaCount.ToString();
             else if (i == 3) gameOverTexts[i].text = "MAX COMBO: " + GameManager.instance.maxCombo.ToString();
             changeToSpriteAsset(gameOverTexts[i], spriteAsset);
-            SoundManager.instance.PlaySound("gameOverMiddle");
+            SoundManager.instance.PlaySE("gameOverMiddle");
             yield return new WaitForSeconds(0.15f);
         }
         yield return new WaitForSeconds(0.1f);
         string rank;
         int score = GameManager.instance.score;
-        if (score >= 30000) rank = "SSS!!!";
-        else if (score >= 20000) rank = "SS!!";
-        else if (score >= 10000) rank = "S!";
-        else if (score >= 5000) rank = "A";
-        else if (score >= 2000) rank = "B";
-        else if (score >= 1000) rank = "C";
-        else rank = "D";
+        int soundType;  //-1:特殊,0:大きな歓声,1:歓声,2:ハンバーグのアレと拍手,3:ハンバーグのあれ,4:ちーん
+        if (score >= 30000) {rank = "SSS!!!"; soundType = -1;}
+        else if (score >= 20000) {rank = "SS!!"; soundType = 0;}
+        else if (score >= 15000) {rank = "S!"; soundType = 0;}
+        else if (score >= 10000) {rank = "A"; soundType = 1;}
+        else if (score >= 5000) {rank = "B"; soundType = 2;}
+        else if (score >= 2000) {rank = "C"; soundType = 3;}
+        else if (score >= 1000) {rank = "D"; soundType = 3;}
+        else if (score > 0) {rank = "E"; soundType = 3;}
+        else {rank = "???"; soundType = 4;}
 
         gameOverTexts[gameOverTexts.Count - 1].gameObject.SetActive(true);
 
         gameOverTexts[gameOverTexts.Count - 1].text = "YOUR RANK: ";
         changeToSpriteAsset(gameOverTexts[gameOverTexts.Count - 1], spriteAsset);
-        SoundManager.instance.PlaySound("dodon");
+        SoundManager.instance.PlaySE("dodon");
         yield return new WaitForSeconds(0.4f);
 
         gameOverTexts[gameOverTexts.Count - 1].text = "YOUR RANK: " + rank;
         changeToSpriteAsset(gameOverTexts[gameOverTexts.Count - 1], spriteAsset);
-    
-        SoundManager.instance.PlaySound("gameOverLast");
+
+        SoundManager.instance.PlaySE("gameOverLast", 1f, soundType);
+
+        yield return new WaitForSeconds(0.5f);
+        
+        gameOverPanel.SetActive(true);
     }
 
-    void changeToSpriteAsset(TMP_Text text, TMP_SpriteAsset spriteAsset)
+    public void changeToSpriteAsset(TMP_Text text, TMP_SpriteAsset spriteAsset)
     {
         text.spriteAsset = spriteAsset;
         string spriteText = text.text;
@@ -170,5 +188,64 @@ public class UiManagerGame : MonoBehaviour
                 default: return -1;
             }
         }
+    }
+    public void showSettingPanel()
+    {
+        StartCoroutine(SettingPanelCoroutine(true));
+    }
+    public void hideSettingPanel()
+    {
+        StartCoroutine(SettingPanelCoroutine(false));
+    }
+    IEnumerator SettingPanelCoroutine(bool isShow)
+    {
+        if (isShow)
+        {
+            float time = 0f;
+            settingPanel.SetActive(true);
+            isSettingPanelActive = true;
+            while (time < 1f)
+            {
+                time += Time.unscaledDeltaTime * 5f;
+                settingPanel.transform.localScale = Vector3.Lerp(Vector3.zero, Vector3.one, time);
+                yield return null;
+            }
+            TimeManager.instance.Pause(true);
+        }
+        else
+        {
+            float time = 1f;
+            while (time > 0f)
+            {
+                time -= Time.unscaledDeltaTime * 5f;
+                settingPanel.transform.localScale = Vector3.Lerp(Vector3.zero, Vector3.one, time);
+                yield return null;
+            }
+            settingPanel.SetActive(false);
+            isSettingPanelActive = false;
+            TimeManager.instance.Pause(false);
+        }
+    }
+    public IEnumerator ComboEffectCoroutine(int combo)
+    {
+        if (isComboEffectPlaying)
+        {
+            stopComboEffect = true;
+            yield return new WaitUntil(() => !isComboEffectPlaying);
+            stopComboEffect = false;
+        }
+        comboEffect.SetActive(true);
+        isComboEffectPlaying = true;
+        float s;
+        s = combo * 0.05f;
+        while (s > 0)
+        {
+            comboEffectImage.color = new Color(comboEffectImage.color.r, comboEffectImage.color.g, comboEffectImage.color.b, s);
+            s -= Time.deltaTime * 0.3f;
+            if (stopComboEffect) break;
+            yield return null;
+        }
+        isComboEffectPlaying = false;
+        comboEffect.SetActive(false);
     }
 }

@@ -22,6 +22,7 @@ public class comboEffect : MonoBehaviour
         GetComponent<TMP_Text>().text = "Combo x" + (ComboManager.instance.currentCombo - 1);
         GetComponent<TMP_Text>().fontSize = 50 + 10 * (ComboManager.instance.currentCombo - 1);
         StartCoroutine(comboChangeColor());
+        //UiManagerGame.instance.changeToSpriteAsset(GetComponent<TMP_Text>(), UiManagerGame.instance.spriteAsset);
         Invoke("destroy", 3.0f);
     }
 

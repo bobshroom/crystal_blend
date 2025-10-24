@@ -1,59 +1,51 @@
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-using unityroom.Api;
 
 public class GameManager : MonoBehaviour
 {
     public static GameManager instance;
-    public string gameState;
-    public int score;
     public int highScore;
-    public int mergedSuikaCount;
-    public int summondSuikaCount;
-    public int maxCombo;
     public Transform suikatati;
     public GameObject platform;
+    public GameObject platformAsiba;
+    public List<GameObject> buttobiList;
     private float timer = 10f;
+    public int score;
+    public int maxCombo;
+    public int maxMargeLevel = 2;
+    public int mergedSuikaCount;
+    public int summondSuikaCount;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
 
+    }
+    void OnEnable()
+    {
+        MasterGameManager.instance.gameState = "playing";
     }
 
     // Update is called once per frame
     void Update()
     {
         timer -= Time.deltaTime;
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
-            UiManagerGame.instance.ComboEffect(Vector3.zero, 2);
-        }
-        if (Input.GetKeyDown(KeyCode.R))// && gameState == "gameOver")
-        {
-            Reset();
-        }
         if (timer <= 0)
         {
             timer = 10f;
-            uploadScoreToUnityroom();
+            MasterGameManager.instance.uploadScoreToUnityroom();
         }
     }
 
     void Awake()
     {
-        if (instance == null)
-        {
-            instance = this;
-            summondSuikaCount = 0;
-            mergedSuikaCount = 0;
-            score = 0;
-            maxCombo = 0;
-            DontDestroyOnLoad(this.gameObject);
-        }
-        else
-        {
-            Destroy(this.gameObject);
-        }
+        instance = this;
+        score = 0;
+        maxCombo = 0;
+        maxMargeLevel = 2;
+        summondSuikaCount = 0;
+        mergedSuikaCount = 0;
     }
     public void AddScore(int add)
     {
@@ -61,10 +53,13 @@ public class GameManager : MonoBehaviour
     }
     public void gameOver()
     {
-        uploadScoreToUnityroom();
-        gameState = "gameOver";
+        Debug.Log("ゲームオーバー");
+        SoundManager.instance.PlaySE("miss");
+        MasterGameManager.instance.uploadScoreToUnityroom();
+        MasterGameManager.instance.gameState = "gameOver";
+        SuikaManager.instance.GameOver();
         if (score > highScore) highScore = score;
-        Time.timeScale = 0.5f;
+        TimeManager.instance.SetTimeScale(0.5f);
         UiManagerGame.instance.StartCoroutine(UiManagerGame.instance.GameOver());
         foreach (Transform suika in suikatati)
         {
@@ -79,10 +74,12 @@ public class GameManager : MonoBehaviour
                 Vector2 force = new Vector2(Random.Range(-2f, 2f), Random.Range(2f, 3f));
                 rb.AddForce(force, ForceMode2D.Impulse);
                 // ランダムな回転
-                float torque = Random.Range(-3f, 3f);
+                float torque = Random.Range(-1f, 1f);
                 rb.AddTorque(torque, ForceMode2D.Impulse);
             }
         }
+        Rigidbody2D platformRb = platformAsiba.GetComponent<Rigidbody2D>(); // 足場の回転と移動の制約を解除
+        platformRb.constraints = RigidbodyConstraints2D.None;
 
         // 足場を吹っ飛ばす
         if (platform != null)
@@ -97,23 +94,31 @@ public class GameManager : MonoBehaviour
                 rb.AddTorque(torque, ForceMode2D.Impulse);
             }
         }
+        foreach (var obj in buttobiList)
+        {
+            if (obj != null)
+            {
+                var rb = obj.GetComponent<Rigidbody2D>();
+                if (rb != null)
+                {
+                    rb.gravityScale = 1;
+                    Vector2 force = new Vector2(Random.Range(-5f, 5f), Random.Range(10f, 15f));
+                    rb.AddForce(force, ForceMode2D.Impulse);
+                    float torque = Random.Range(-2f, 2f);
+                    rb.AddTorque(torque, ForceMode2D.Impulse);
+                }
+            }
+        }
+        SoundManager.instance.fadeOutBGM(1.5f);
     }
-    void Reset()
+    public void Reset()
     {
         score = 0;
         mergedSuikaCount = 0;
         summondSuikaCount = 0;
         maxCombo = 0;
-        Time.timeScale = 1f;
+        TimeManager.instance.SetTimeScale(1f);
+        MasterGameManager.instance.gameState = "playing";
         SceneManager.LoadScene("game");
-    }
-    public void uploadScoreToUnityroom()
-    {
-        UnityroomApiClient.Instance.SendScore(1, score, ScoreboardWriteMode.HighScoreDesc);
-        
-    }
-    public void upLoadMaxComboToUnityroom()
-    {
-        UnityroomApiClient.Instance.SendScore(2, maxCombo, ScoreboardWriteMode.HighScoreDesc);
     }
 }

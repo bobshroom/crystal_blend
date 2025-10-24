@@ -37,7 +37,7 @@ public class gameOverController : MonoBehaviour
         }
         transform.position = finalPos;
         transform.localScale = finalScale;
-        SoundManager.instance.PlaySound("gameOverInto");
+        SoundManager.instance.PlaySE("gameOverInto");
 
         for (int i = 0; i < 20; i++)    //石チップスを20個生成
         {

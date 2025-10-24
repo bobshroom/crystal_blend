@@ -15,7 +15,7 @@ public class GameOverCheck : MonoBehaviour
     }
     void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.CompareTag("suika") && GameManager.instance.gameState == "playing")
+        if (collision.gameObject.CompareTag("suika") && MasterGameManager.instance.gameState == "playing")
         {
             GameManager.instance.gameOver();
         }

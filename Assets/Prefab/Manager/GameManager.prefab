@@ -44,3 +44,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: df04801779b31684ebbb9137a6d2a104, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gameState: 
+  score: 0
+  highScore: 0
+  mergedSuikaCount: 0
+  summondSuikaCount: 0
+  maxCombo: 0
+  suikatati: {fileID: 0}
+  platform: {fileID: 0}
+  platformAsiba: {fileID: 0}
+  maxMargeLevel: 2

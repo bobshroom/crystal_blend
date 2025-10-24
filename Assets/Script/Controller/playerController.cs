@@ -13,15 +13,19 @@ public class playerController : MonoBehaviour
 
     void Update()
     {
-        if ((Input.GetMouseButtonDown(0) || Input.GetKeyDown(KeyCode.Space)) && GameManager.instance.gameState == "playing")
+        if (((Input.GetMouseButtonDown(0) && MasterGameManager.instance.desktopMode) || (Input.GetMouseButtonUp(0) && !MasterGameManager.instance.desktopMode) || Input.GetKeyDown(KeyCode.Space)) && MasterGameManager.instance.gameState == "playing")
         {
-            SuikaManager.instance.DropSuika();
+            if (Camera.main.ScreenToWorldPoint(Input.mousePosition).x > -moveRange - 0.1f && Camera.main.ScreenToWorldPoint(Input.mousePosition).x < moveRange + 0.1f)
+            {
+                SuikaManager.instance.DropSuika();
+            }
         }
     }
 
     // Update is called once per frame
     void FixedUpdate()
     {
+        if (MasterGameManager.instance.gameState != "playing") return;
         Vector3 mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
         if (mousePosition.x > moveRange) mousePosition.x = moveRange;
         else if (mousePosition.x < -moveRange) mousePosition.x = -moveRange;

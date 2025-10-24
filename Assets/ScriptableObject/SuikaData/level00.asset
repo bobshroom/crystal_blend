@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   level: 0
   size: 3.5
-  color: {r: 1, g: 1, b: 1, a: 1}
+  color: {r: 0.7075472, g: 0.7075472, b: 0.7075472, a: 1}
   score: 0
-  sprite: {fileID: -2182124076254010665, guid: 8c295f4128e84a0419fa5610bd366152, type: 3}
+  sprite: {fileID: -6061718593363744130, guid: 333cffac1103e174a90bf7ca89594e7a, type: 3}
   name: suika
   sizeOffset: 0.25

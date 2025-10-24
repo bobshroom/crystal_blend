@@ -12,7 +12,6 @@ public class stoneTipsEffect : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        Debug.Log("stoneTipsEffect Start");
         spriteRenderer.sprite = stoneSprites[Random.Range(0, stoneSprites.Count)];
         Destroy(gameObject, 3.0f);
         gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(Random.Range(-sidePower, sidePower), Random.Range(upPower, upPower * 1.2f)));

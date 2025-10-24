@@ -37,9 +37,9 @@ public class SuikaManager : MonoBehaviour
             isDroppable = false;
             currentSuika.transform.parent = ParentTransform;
             currentSuika.GetComponent<CircleCollider2D>().enabled = true;
-            currentSuika.GetComponent<Rigidbody2D>().gravityScale = 1;
+            currentSuika.GetComponent<Rigidbody2D>().gravityScale = 1f;
             currentSuika = null;
-            Invoke("summonSuika", interval);
+            if (MasterGameManager.instance.gameState == "playing") Invoke("summonSuika", interval);
         }
         else
         {
@@ -62,8 +62,6 @@ public class SuikaManager : MonoBehaviour
     }
     public void GameOver()
     {
-        currentSuika.transform.parent = ParentTransform;
-        currentSuika.GetComponent<CircleCollider2D>().enabled = true;
-        currentSuika.GetComponent<Rigidbody2D>().gravityScale = 1;
+        DropSuika();
     }
 }

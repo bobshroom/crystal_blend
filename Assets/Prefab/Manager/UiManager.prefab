@@ -44,3 +44,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fd99aba6b0a08fd4082c62a7d0942e99, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  soundImages:
+  - {fileID: 39918544277421894, guid: 239e7b2b951d51b4c8692c199737606a, type: 3}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  effectImages:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
